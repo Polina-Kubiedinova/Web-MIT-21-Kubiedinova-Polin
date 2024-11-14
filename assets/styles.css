@@ -24,15 +24,19 @@ body {
    margin-bottom: 10px;
    background-color: #fffcfc;
    border-radius: 5px; 
+   box-shadow: 0 4px 6px -2px rgba(26,26,26,0.2);
 }
-.tabs a {
+.tabs button {
    padding: 10px 20px;
    text-decoration: none;
    color: black;
    border-bottom: 2px solid transparent;
    font-size: 14px;
 }
-.tabs a.active {
+.tabs button:hover {
+   background-color: #b9a4a4;
+}
+.tabs button.active {
    border-bottom: 2px solid green;
    font-weight: normal;
 }
@@ -66,10 +70,14 @@ body {
    padding: 5px 10px;
    border-radius: 5px;
    font-size: 14px;
+   line-height: 20px;
+   color: black;
+   display: flex;
+   flex-direction:row
 }
 .status.draft {
    background-color: #f0f0f0;
-   color: #494949;
+   color: #5b5b5b;
    border-radius: 25px;
 }
 .status.active {
