@@ -14,7 +14,7 @@ body {
    font-size: 18px; /* Розмір шрифту */
    color: #333; /* Темно-сірий колір тексту */
    text-align: left; /* Вирівнювання по лівому краю */
-   margin-bottom: 20px; /* Відступ знизу для простору між заголовком і вкладками */ /* Великі літери */
+   margin-bottom: 0px; /* Відступ знизу для простору між заголовком і вкладками */ /* Великі літери */
    letter-spacing: 1px; /* Простір між літерами */
    font-weight:bold; /* Нормальна товщина шрифту */
 }
@@ -36,7 +36,7 @@ body {
 .tabs button:hover {
    background-color: #b9a4a4;
 }
-.tabs button.active {
+.tabs button.active- {
    border-bottom: 2px solid green;
    font-weight: normal;
 }
@@ -66,7 +66,7 @@ body {
 .settings-table a{
    color: #648ff5
 }
-.status {
+.statuus {
    padding: 5px 10px;
    border-radius: 5px;
    font-size: 14px;
@@ -75,15 +75,16 @@ body {
    display: flex;
    flex-direction:row
 }
-.status.draft {
+.draft {
    background-color: #f0f0f0;
    color: #5b5b5b;
    border-radius: 25px;
 }
-.status.active {
+.active {
    background-color: #e0ffe0;
    color: #30673d;
    border-radius: 25px;
+
 }
 .delete-icon {
    cursor: pointer;
@@ -92,3 +93,169 @@ body {
 .delete-icon:hover {
    color: red;
 }
+.empty-state {
+   
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #ffffff;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   text-align: center;
+}
+
+.empty-state img {
+   max-width: 200px;
+   margin-bottom: 20px;
+}
+
+.empty-state h2 {
+   font-size: 20px;
+   color: #555;
+}
+
+.empty-state p {
+   font-size: 16px;
+   color: #777;
+}
+
+.btn-add {
+   display: inline-flex; 
+   justify-content: center;
+   align-items: center;
+   background-color: #303030;
+   color: white;
+   border: none;
+   border-radius: 30%;
+   font-size: 20px;
+   width: 30px;
+   height: 30px;
+   line-height: 0px;
+   text-align: center;
+   cursor: pointer;
+   margin-top: 10px;
+}
+.aligng {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: center;
+}
+.status h2 {
+   margin: 0 15px 0 0;
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+}
+.status {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 0;
+   /*border-bottom: 1px solid #ddd;*/
+}
+.buttons {
+      display: flex;
+      gap: 10px;
+}
+.btn-create {
+   background-color: #303030;
+   color: white;
+   box-shadow: 0 4px 6px -2px rgba(26, 26, 26, 0.2);
+   padding: 10px 15px 10px 10px;
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: bold;
+   margin: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+   .fon2 {
+     max-width: 100%;
+   }
+   .empty-state{
+     width: 60%;
+   }
+   .container {
+     padding: 10px;
+     margin: 10px;
+   }
+   .product-name {
+     padding-top: 15px;
+   }
+   .variant-list {
+     padding-left: 20px;
+     padding-top: 5px;
+   }
+   .fon3 {
+     width: 100%;
+   }
+   .site {
+     flex-direction: column;
+     gap: 10px;
+   }
+   .buttons button {
+     width: 100%;
+     padding: 8px 10px;
+     font-size: 12px;
+   }
+   .books-container {
+     padding: 10px;
+     margin-top: 15px;
+   }
+   .btn-add {
+     width: 25px;
+     height: 25px;
+     font-size: 18px;
+   }
+ }
+ @media (max-width: 480px) {
+   .fon2, .container, .fon, .fon3 {
+     max-width: 100%;
+     padding: 0 10px;
+   }
+   .empty-state{
+     width: 60%;
+   }
+   body {
+     font-size: 14px;
+   }
+   .product-name {
+     font-size: 16px;
+     padding-top: 10px;
+   }
+   .variant-list {
+     padding-left: 10px;
+     padding-top: 5px;
+   }
+   .fon3 button, .but2 button {
+     width: 100%;
+     font-size: 12px;
+   }
+   .site {
+     gap: 5px;
+   }
+   .buttons {
+     flex-direction: column;
+     gap: 5px;
+   }
+   .books-container {
+     padding: 8px;
+     margin-top: 10px;
+   }
+   .serch-input {
+     font-size: 14px;
+     padding: 10px 15px 10px 35px;
+   }
+   .btn-add {
+     width: 20px;
+     height: 20px;
+     font-size: 16px;
+   }
+   .status h2 {
+     font-size: 16px;
+   }
+ }

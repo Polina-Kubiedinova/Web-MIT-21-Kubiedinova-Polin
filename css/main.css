@@ -42,6 +42,8 @@ body {
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .fon3 {
@@ -85,6 +87,8 @@ body {
 .imgd {
   display: flex;
   justify-content: flex-end;
+  flex-direction: row;
+  align-content: center;
 }
 
 .status {
@@ -242,7 +246,7 @@ form label {
 .formulas {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   margin-top: 20px;
   border-collapse: collapse;

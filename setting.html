@@ -5,6 +5,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/main.css.map">
    <link rel="stylesheet" href="css/main.css">
+   <script type="module" src="./script/script.js"></script>
+   <script type="module" src="./script/seting.js"></script>
    <title>Document</title>
 </head>
 <body>
@@ -13,9 +15,9 @@
       <div class="buttons">
          <button class="btn-secondary">Discard</button>
          <button class="btn-primary">Save</button>
-         <button class="btn-create">Create Formula</button>
+         <button id="buttun-add-head" class="btn-create">Create Formula</button>
       </div></div>
-      <form class="fon">
+      <form class="fon-">
          <label for="name">Title</label>
          <input type="text" id="name" name="name" class="text-input" placeholder="Setting Name">
       </form>
@@ -23,15 +25,15 @@
       <img src="image/empty.jpg" alt="No content">
       <h2>Oopsie, seems that you have no formulas yet</h2>
       <p>Create your first formula!</p>
-      <button class="btn-add">+</button>
+      <button id="buttun-add" class="btn-add">+</button>
    </div>
    <div class="fon">
       <h3>Formulas</h3>
          <div class="formulas">
             <div class="text"><a>BTC increase each 2 sec for T-Shirts</a></div>
             <div class="imgd">
-            <button><img src="image/change.jpg"></button>
-            <button><img src="image/Trash.jpg"></button>
+            <button class="form-ch"><img src="image/change.jpg"></button>
+            <button class="form-del"><img src="image/Trash.jpg"></button>
             </div>
          </div>
    </div>
