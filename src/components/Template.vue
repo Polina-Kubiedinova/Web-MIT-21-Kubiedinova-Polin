@@ -1,15 +1,13 @@
 <template>
 
-
 </template>
-
 
 <script>
 export default {
    props: {
       id: {
-            type: String,
-            required: true,
+         type: String,
+         required: true,
       },
    },
    computed: {
