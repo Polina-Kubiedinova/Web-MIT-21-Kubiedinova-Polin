@@ -43,7 +43,7 @@ export default createStore({
                      title: "BTC in used for T-Shirts",
                      formula: "X * Y",
                      frequency: 2000,
-                        currency: "ASD",
+                     currency: "ASD",
                      targets: {
                            collectionsIds: ['collection-1827498', 'collection-324545634'],
                            products: [
@@ -148,7 +148,7 @@ export default createStore({
          commit('REMOVE_SETTING', settingId);
       },
       /**
-      * Remove the setting from the settings array
+      * Create the setting
       */
       createSetting({ commit }, setting) {
          // call the mutation
